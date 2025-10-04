@@ -471,7 +471,7 @@
             }
             
             // Uncomment and modify the following function to connect to a real Google Sheet
-            /*
+            
             async function fetchTeamDataFromGoogleSheet() {
                 // Replace with your Google Sheets API endpoint and sheet ID
                 const sheetId = 'YOUR_GOOGLE_SHEET_ID';
@@ -479,7 +479,7 @@
                 const range = 'Sheet1!A2:D'; // Adjust range based on your sheet structure
                 
                 try {
-                    const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`);
+                    const response = await fetch(`https://docs.google.com/spreadsheets/d/e/2PACX-1vROFI5J00oY15l76K9qFzgoFQUvU2OEHKK1OpCkMY4ePIudn7CSdezuo9CI-332_bU1RF0nXktezheo/pubhtml${sheetId}/values/${range}?key=${apiKey}`);
                     const data = await response.json();
                     
                     if (data.values) {
